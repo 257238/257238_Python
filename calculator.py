@@ -1,7 +1,6 @@
 """ Calculator
-----------------------------------------
 """
-def addition ():
+def addition ():    #function for addition
     print("Addition")
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -11,7 +10,7 @@ def addition ():
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def subtraction ():
+def subtraction (): #function for subtraction
     print("Subtraction");
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -21,7 +20,7 @@ def subtraction ():
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def multiplication ():
+def multiplication ():  #function for multiplication
     print("Multiplication")
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -31,14 +30,15 @@ def multiplication ():
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def average():
+def average():  #function for average
     an = []
     an = addition()
     t = an[1]
     a = an[0]
     ans = a / t
     return [ans,t]
-#main...
+
+
 while True:
     list = []
     print(" Simple Calculator")
