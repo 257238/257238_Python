@@ -1,6 +1,6 @@
 """ Calculator
 """
-def addition ():    #function for addition
+def add ():    #function for addition
     print("Addition")
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -10,7 +10,7 @@ def addition ():    #function for addition
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def subtraction (): #function for subtraction
+def subtract (): #function for subtraction
     print("Subtraction");
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -20,7 +20,7 @@ def subtraction (): #function for subtraction
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def multiplication ():  #function for multiplication
+def multiply ():  #function for multiplication
     print("Multiplication")
     n = float(input("Enter the number: "))
     t = 0 #Total number enter
@@ -30,9 +30,9 @@ def multiplication ():  #function for multiplication
         t+=1
         n = float(input("Enter another number (0 to calculate): "))
     return [ans,t]
-def average():  #function for average
+def avg():  #function for average
     an = []
-    an = addition()
+    an = add()
     t = an[1]
     a = an[0]
     ans = a / t
@@ -50,16 +50,16 @@ while True:
     c = input(" ")
     if c != 'q':
         if c == 'a':
-            list = addition()
+            list = add()
             print("Ans = ", list[0], " total inputs ",list[1])
         elif c == 's':
-            list = subtraction()
+            list = subtract()
             print("Ans = ", list[0], " total inputs ",list[1])
         elif c == 'm':
-            list = multiplication()
+            list = multiply()
             print("Ans = ", list[0], " total inputs ",list[1])
         elif c == 'v':
-            list = average()
+            list = aveg()
             print("Ans = ", list[0], " total inputs ",list[1])
         else:
             print ("Sorry, invilid character")
